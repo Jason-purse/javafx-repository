@@ -1,0 +1,26 @@
+plugins {
+    id 'java-library'
+}
+
+group 'club.smileboy'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.apache.sshd:sshd-scp:2.8.0")
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes('Automatic-Module-Name': 'club.smileboy.ssh.util')
+    }
+}

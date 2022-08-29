@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/modular-project-study/hello-world-modular-project/hello-world-modular-project.iml" filepath="$PROJECT_DIR$/modular-project-study/hello-world-modular-project/hello-world-modular-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modular-project-study/hello-world-modular-project/hello.modules/hello.modules.iml" filepath="$PROJECT_DIR$/modular-project-study/hello-world-modular-project/hello.modules/hello.modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/javafx-repository.iml" filepath="$PROJECT_DIR$/.idea/javafx-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modular-project-study/hello-world-modular-project/main.app/main.app.iml" filepath="$PROJECT_DIR$/modular-project-study/hello-world-modular-project/main.app/main.app.iml" />
+    </modules>
+  </component>
+</project>

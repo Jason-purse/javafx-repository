@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.10'
+}
+
+group 'club.smileboy'
+version '1.0-SNAPSHOT'
+
+repositories {
+
+    mavenLocal()
+
+    mavenCentral()
+}
+
+dependencies {
+    implementation("club.smileboy:sshd-util:1.0-SNAPSHOT")
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+application {
+    mainModule = 'club.smileboy.gradlehelloworld'
+    mainClass = 'club.smileboy.gradlehelloworld.HelloApplication'
+}
+
+javafx {
+    version = '11.0.2'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
